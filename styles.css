@@ -1,0 +1,63 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e2f; /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor de la calculadora */
+.calculator {
+    background: #2d2d44;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+}
+
+/* Pantalla de resultados */
+#display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    text-align: right; /* Alineación a la derecha */
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Contenedor de botones */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 10px;
+}
+
+/* Estilo de botones */
+button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: #4e4e70;
+    color: white;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+    background: #6a6aa8;
+}
+
+/* Botón igual (=) */
+.equal {
+    background: #00aaff;
+    grid-row: span 2; /* Ocupa 2 filas */
+}
+
+/* Botón cero */
+.zero {
+    grid-column: span 2; /* Ocupa 2 columnas */
+}
